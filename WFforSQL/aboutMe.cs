@@ -16,5 +16,11 @@ namespace WFforSQL
         {
             InitializeComponent();
         }
+
+        private void назадToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Program.MainForm.Activate();
+        }
     }
 }
