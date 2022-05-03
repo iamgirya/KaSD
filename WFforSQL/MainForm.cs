@@ -74,5 +74,17 @@ namespace WFforSQL
             export exportMoment = new export();
             exportMoment.Show();
         }
+
+        private void аттестацииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            attestations t = new attestations();
+            t.Show();
+        }
+
+        private void средняяУспеваемостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            avgSuccess t = new avgSuccess();
+            t.Show();
+        }
     }
 }

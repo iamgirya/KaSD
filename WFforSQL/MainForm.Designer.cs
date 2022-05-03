@@ -39,9 +39,11 @@ namespace WFforSQL
             this.ответыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вопросыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отчётыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПриложенииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.экспортToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.аттестацииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.средняяУспеваемостьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,10 +127,19 @@ namespace WFforSQL
             // отчётыToolStripMenuItem
             // 
             this.отчётыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.экспортToolStripMenuItem});
+            this.экспортToolStripMenuItem,
+            this.аттестацииToolStripMenuItem,
+            this.средняяУспеваемостьToolStripMenuItem});
             this.отчётыToolStripMenuItem.Name = "отчётыToolStripMenuItem";
             this.отчётыToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.отчётыToolStripMenuItem.Text = "Отчёты";
+            // 
+            // экспортToolStripMenuItem
+            // 
+            this.экспортToolStripMenuItem.Name = "экспортToolStripMenuItem";
+            this.экспортToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.экспортToolStripMenuItem.Text = "Экспорт";
+            this.экспортToolStripMenuItem.Click += new System.EventHandler(this.экспортToolStripMenuItem_Click);
             // 
             // оПриложенииToolStripMenuItem
             // 
@@ -144,12 +155,19 @@ namespace WFforSQL
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выход);
             // 
-            // экспортToolStripMenuItem
+            // аттестацииToolStripMenuItem
             // 
-            this.экспортToolStripMenuItem.Name = "экспортToolStripMenuItem";
-            this.экспортToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.экспортToolStripMenuItem.Text = "Экспорт";
-            this.экспортToolStripMenuItem.Click += new System.EventHandler(this.экспортToolStripMenuItem_Click);
+            this.аттестацииToolStripMenuItem.Name = "аттестацииToolStripMenuItem";
+            this.аттестацииToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.аттестацииToolStripMenuItem.Text = "Аттестации";
+            this.аттестацииToolStripMenuItem.Click += new System.EventHandler(this.аттестацииToolStripMenuItem_Click);
+            // 
+            // средняяУспеваемостьToolStripMenuItem
+            // 
+            this.средняяУспеваемостьToolStripMenuItem.Name = "средняяУспеваемостьToolStripMenuItem";
+            this.средняяУспеваемостьToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.средняяУспеваемостьToolStripMenuItem.Text = "Средняя успеваемость";
+            this.средняяУспеваемостьToolStripMenuItem.Click += new System.EventHandler(this.средняяУспеваемостьToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -183,5 +201,7 @@ namespace WFforSQL
         private System.Windows.Forms.ToolStripMenuItem ответыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вопросыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem экспортToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem аттестацииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem средняяУспеваемостьToolStripMenuItem;
     }
 }
