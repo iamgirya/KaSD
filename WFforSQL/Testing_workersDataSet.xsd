@@ -359,6 +359,94 @@ SELECT Номер, ФИО, Код_должности, Стаж_работы FROM
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_testTableAdapter" GeneratorDataComponentClassName="View_testTableAdapter" Name="View_test" UserDataComponentName="View_testTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Testing_workersConnectionString (Settings)" DbObjectName="Testing_workers.dbo.View_test" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Создатель, [Тестируемая должность], Необходимый_процент_выполнения, Максимальное_время_выполнения, [К. должности], [Н. испытания], [Н. испытателя] FROM dbo.View_test</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Создатель" DataSetColumn="Создатель" />
+              <Mapping SourceColumn="Тестируемая должность" DataSetColumn="Тестируемая должность" />
+              <Mapping SourceColumn="Необходимый_процент_выполнения" DataSetColumn="Необходимый_процент_выполнения" />
+              <Mapping SourceColumn="Максимальное_время_выполнения" DataSetColumn="Максимальное_время_выполнения" />
+              <Mapping SourceColumn="К. должности" DataSetColumn="К_ должности" />
+              <Mapping SourceColumn="Н. испытания" DataSetColumn="Н_ испытания" />
+              <Mapping SourceColumn="Н. испытателя" DataSetColumn="Н_ испытателя" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_вопрTableAdapter" GeneratorDataComponentClassName="View_вопрTableAdapter" Name="View_вопр" UserDataComponentName="View_вопрTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Testing_workersConnectionString (Settings)" DbObjectName="Testing_workers.dbo.View_вопр" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Тестируемая должность], Содержание, Ответ, Сложность, [К. должности], [Н. испытания] FROM dbo.View_вопр</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Тестируемая должность" DataSetColumn="Тестируемая должность" />
+              <Mapping SourceColumn="Содержание" DataSetColumn="Содержание" />
+              <Mapping SourceColumn="Ответ" DataSetColumn="Ответ" />
+              <Mapping SourceColumn="Сложность" DataSetColumn="Сложность" />
+              <Mapping SourceColumn="К. должности" DataSetColumn="К_ должности" />
+              <Mapping SourceColumn="Н. испытания" DataSetColumn="Н_ испытания" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_ответыTableAdapter" GeneratorDataComponentClassName="View_ответыTableAdapter" Name="View_ответы" UserDataComponentName="View_ответыTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Testing_workersConnectionString (Settings)" DbObjectName="Testing_workers.dbo.View_ответы" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Тестируемый, Проверяющий, [Тестируемая должность], Процент_правильных_ответов, Время_выполнения, [Н. работника], [Н. испытателя], [Н. испытания], [К. должности] FROM dbo.View_ответы</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Тестируемый" DataSetColumn="Тестируемый" />
+              <Mapping SourceColumn="Проверяющий" DataSetColumn="Проверяющий" />
+              <Mapping SourceColumn="Тестируемая должность" DataSetColumn="Тестируемая должность" />
+              <Mapping SourceColumn="Процент_правильных_ответов" DataSetColumn="Процент_правильных_ответов" />
+              <Mapping SourceColumn="Время_выполнения" DataSetColumn="Время_выполнения" />
+              <Mapping SourceColumn="Н. работника" DataSetColumn="Н_ работника" />
+              <Mapping SourceColumn="Н. испытателя" DataSetColumn="Н_ испытателя" />
+              <Mapping SourceColumn="Н. испытания" DataSetColumn="Н_ испытания" />
+              <Mapping SourceColumn="К. должности" DataSetColumn="К_ должности" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_РДTableAdapter" GeneratorDataComponentClassName="View_РДTableAdapter" Name="View_РД" UserDataComponentName="View_РДTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Testing_workersConnectionString (Settings)" DbObjectName="Testing_workers.dbo.View_РД" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Работник, Должность, Стаж_работы, Размер_оклада, [Н. работника], [К. должности] FROM dbo.View_РД</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Работник" DataSetColumn="Работник" />
+              <Mapping SourceColumn="Должность" DataSetColumn="Должность" />
+              <Mapping SourceColumn="Стаж_работы" DataSetColumn="Стаж_работы" />
+              <Mapping SourceColumn="Размер_оклада" DataSetColumn="Размер_оклада" />
+              <Mapping SourceColumn="Н. работника" DataSetColumn="Н_ работника" />
+              <Mapping SourceColumn="К. должности" DataSetColumn="К_ должности" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Отчёт о средней успеваемостиTableAdapter" GeneratorDataComponentClassName="Отчёт_о_средней_успеваемостиTableAdapter" Name="Отчёт о средней успеваемости" UserDataComponentName="Отчёт о средней успеваемостиTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="Testing_workersConnectionString (Settings)" DbObjectName="Testing_workers.dbo.[Отчёт о средней успеваемости]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -494,6 +582,118 @@ SELECT Номер, ФИО, Код_должности, Стаж_работы FROM
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="View_test" msprop:Generator_TableClassName="View_testDataTable" msprop:Generator_TableVarName="tableView_test" msprop:Generator_TablePropName="View_test" msprop:Generator_RowDeletingName="View_testRowDeleting" msprop:Generator_RowChangingName="View_testRowChanging" msprop:Generator_RowEvHandlerName="View_testRowChangeEventHandler" msprop:Generator_RowDeletedName="View_testRowDeleted" msprop:Generator_UserTableName="View_test" msprop:Generator_RowChangedName="View_testRowChanged" msprop:Generator_RowEvArgName="View_testRowChangeEvent" msprop:Generator_RowClassName="View_testRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Создатель" msprop:Generator_ColumnVarNameInTable="columnСоздатель" msprop:Generator_ColumnPropNameInRow="Создатель" msprop:Generator_ColumnPropNameInTable="СоздательColumn" msprop:Generator_UserColumnName="Создатель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тестируемая_x0020_должность" msprop:Generator_ColumnVarNameInTable="columnТестируемая_должность" msprop:Generator_ColumnPropNameInRow="Тестируемая_должность" msprop:Generator_ColumnPropNameInTable="Тестируемая_должностьColumn" msprop:Generator_UserColumnName="Тестируемая должность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Необходимый_процент_выполнения" msprop:Generator_ColumnVarNameInTable="columnНеобходимый_процент_выполнения" msprop:Generator_ColumnPropNameInRow="Необходимый_процент_выполнения" msprop:Generator_ColumnPropNameInTable="Необходимый_процент_выполненияColumn" msprop:Generator_UserColumnName="Необходимый_процент_выполнения" type="xs:int" />
+              <xs:element name="Максимальное_время_выполнения" msprop:Generator_ColumnVarNameInTable="columnМаксимальное_время_выполнения" msprop:Generator_ColumnPropNameInRow="Максимальное_время_выполнения" msprop:Generator_ColumnPropNameInTable="Максимальное_время_выполненияColumn" msprop:Generator_UserColumnName="Максимальное_время_выполнения" type="xs:double" />
+              <xs:element name="К__x0020_должности" msprop:Generator_ColumnVarNameInTable="columnК__должности" msprop:Generator_ColumnPropNameInRow="К__должности" msprop:Generator_ColumnPropNameInTable="К__должностиColumn" msprop:Generator_UserColumnName="К_ должности" type="xs:int" />
+              <xs:element name="Н__x0020_испытания" msprop:Generator_ColumnVarNameInTable="columnН__испытания" msprop:Generator_ColumnPropNameInRow="Н__испытания" msprop:Generator_ColumnPropNameInTable="Н__испытанияColumn" msprop:Generator_UserColumnName="Н_ испытания" type="xs:int" />
+              <xs:element name="Н__x0020_испытателя" msprop:Generator_ColumnVarNameInTable="columnН__испытателя" msprop:Generator_ColumnPropNameInRow="Н__испытателя" msprop:Generator_ColumnPropNameInTable="Н__испытателяColumn" msprop:Generator_UserColumnName="Н_ испытателя" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_вопр" msprop:Generator_TableClassName="View_вопрDataTable" msprop:Generator_TableVarName="tableView_вопр" msprop:Generator_TablePropName="View_вопр" msprop:Generator_RowDeletingName="View_вопрRowDeleting" msprop:Generator_RowChangingName="View_вопрRowChanging" msprop:Generator_RowEvHandlerName="View_вопрRowChangeEventHandler" msprop:Generator_RowDeletedName="View_вопрRowDeleted" msprop:Generator_UserTableName="View_вопр" msprop:Generator_RowChangedName="View_вопрRowChanged" msprop:Generator_RowEvArgName="View_вопрRowChangeEvent" msprop:Generator_RowClassName="View_вопрRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Тестируемая_x0020_должность" msprop:Generator_ColumnVarNameInTable="columnТестируемая_должность" msprop:Generator_ColumnPropNameInRow="Тестируемая_должность" msprop:Generator_ColumnPropNameInTable="Тестируемая_должностьColumn" msprop:Generator_UserColumnName="Тестируемая должность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Содержание" msprop:Generator_ColumnVarNameInTable="columnСодержание" msprop:Generator_ColumnPropNameInRow="Содержание" msprop:Generator_ColumnPropNameInTable="СодержаниеColumn" msprop:Generator_UserColumnName="Содержание">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ответ" msprop:Generator_ColumnVarNameInTable="columnОтвет" msprop:Generator_ColumnPropNameInRow="Ответ" msprop:Generator_ColumnPropNameInTable="ОтветColumn" msprop:Generator_UserColumnName="Ответ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сложность" msprop:Generator_ColumnVarNameInTable="columnСложность" msprop:Generator_ColumnPropNameInRow="Сложность" msprop:Generator_ColumnPropNameInTable="СложностьColumn" msprop:Generator_UserColumnName="Сложность" type="xs:int" />
+              <xs:element name="К__x0020_должности" msprop:Generator_ColumnVarNameInTable="columnК__должности" msprop:Generator_ColumnPropNameInRow="К__должности" msprop:Generator_ColumnPropNameInTable="К__должностиColumn" msprop:Generator_UserColumnName="К_ должности" type="xs:int" />
+              <xs:element name="Н__x0020_испытания" msprop:Generator_ColumnVarNameInTable="columnН__испытания" msprop:Generator_ColumnPropNameInRow="Н__испытания" msprop:Generator_ColumnPropNameInTable="Н__испытанияColumn" msprop:Generator_UserColumnName="Н_ испытания" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_ответы" msprop:Generator_TableClassName="View_ответыDataTable" msprop:Generator_TableVarName="tableView_ответы" msprop:Generator_TablePropName="View_ответы" msprop:Generator_RowDeletingName="View_ответыRowDeleting" msprop:Generator_RowChangingName="View_ответыRowChanging" msprop:Generator_RowEvHandlerName="View_ответыRowChangeEventHandler" msprop:Generator_RowDeletedName="View_ответыRowDeleted" msprop:Generator_UserTableName="View_ответы" msprop:Generator_RowChangedName="View_ответыRowChanged" msprop:Generator_RowEvArgName="View_ответыRowChangeEvent" msprop:Generator_RowClassName="View_ответыRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Тестируемый" msprop:Generator_ColumnVarNameInTable="columnТестируемый" msprop:Generator_ColumnPropNameInRow="Тестируемый" msprop:Generator_ColumnPropNameInTable="ТестируемыйColumn" msprop:Generator_UserColumnName="Тестируемый">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Проверяющий" msprop:Generator_ColumnVarNameInTable="columnПроверяющий" msprop:Generator_ColumnPropNameInRow="Проверяющий" msprop:Generator_ColumnPropNameInTable="ПроверяющийColumn" msprop:Generator_UserColumnName="Проверяющий">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тестируемая_x0020_должность" msprop:Generator_ColumnVarNameInTable="columnТестируемая_должность" msprop:Generator_ColumnPropNameInRow="Тестируемая_должность" msprop:Generator_ColumnPropNameInTable="Тестируемая_должностьColumn" msprop:Generator_UserColumnName="Тестируемая должность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Процент_правильных_ответов" msprop:Generator_ColumnVarNameInTable="columnПроцент_правильных_ответов" msprop:Generator_ColumnPropNameInRow="Процент_правильных_ответов" msprop:Generator_ColumnPropNameInTable="Процент_правильных_ответовColumn" msprop:Generator_UserColumnName="Процент_правильных_ответов" type="xs:int" />
+              <xs:element name="Время_выполнения" msprop:Generator_ColumnVarNameInTable="columnВремя_выполнения" msprop:Generator_ColumnPropNameInRow="Время_выполнения" msprop:Generator_ColumnPropNameInTable="Время_выполненияColumn" msprop:Generator_UserColumnName="Время_выполнения" type="xs:double" />
+              <xs:element name="Н__x0020_работника" msprop:Generator_ColumnVarNameInTable="columnН__работника" msprop:Generator_ColumnPropNameInRow="Н__работника" msprop:Generator_ColumnPropNameInTable="Н__работникаColumn" msprop:Generator_UserColumnName="Н_ работника" type="xs:int" />
+              <xs:element name="Н__x0020_испытателя" msprop:Generator_ColumnVarNameInTable="columnН__испытателя" msprop:Generator_ColumnPropNameInRow="Н__испытателя" msprop:Generator_ColumnPropNameInTable="Н__испытателяColumn" msprop:Generator_UserColumnName="Н_ испытателя" type="xs:int" />
+              <xs:element name="Н__x0020_испытания" msprop:Generator_ColumnVarNameInTable="columnН__испытания" msprop:Generator_ColumnPropNameInRow="Н__испытания" msprop:Generator_ColumnPropNameInTable="Н__испытанияColumn" msprop:Generator_UserColumnName="Н_ испытания" type="xs:int" />
+              <xs:element name="К__x0020_должности" msprop:Generator_ColumnVarNameInTable="columnК__должности" msprop:Generator_ColumnPropNameInRow="К__должности" msprop:Generator_ColumnPropNameInTable="К__должностиColumn" msprop:Generator_UserColumnName="К_ должности" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_РД" msprop:Generator_TableClassName="View_РДDataTable" msprop:Generator_TableVarName="tableView_РД" msprop:Generator_TablePropName="View_РД" msprop:Generator_RowDeletingName="View_РДRowDeleting" msprop:Generator_RowChangingName="View_РДRowChanging" msprop:Generator_RowEvHandlerName="View_РДRowChangeEventHandler" msprop:Generator_RowDeletedName="View_РДRowDeleted" msprop:Generator_UserTableName="View_РД" msprop:Generator_RowChangedName="View_РДRowChanged" msprop:Generator_RowEvArgName="View_РДRowChangeEvent" msprop:Generator_RowClassName="View_РДRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Работник" msprop:Generator_ColumnVarNameInTable="columnРаботник" msprop:Generator_ColumnPropNameInRow="Работник" msprop:Generator_ColumnPropNameInTable="РаботникColumn" msprop:Generator_UserColumnName="Работник">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Должность" msprop:Generator_ColumnVarNameInTable="columnДолжность" msprop:Generator_ColumnPropNameInRow="Должность" msprop:Generator_ColumnPropNameInTable="ДолжностьColumn" msprop:Generator_UserColumnName="Должность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Стаж_работы" msprop:Generator_ColumnVarNameInTable="columnСтаж_работы" msprop:Generator_ColumnPropNameInRow="Стаж_работы" msprop:Generator_ColumnPropNameInTable="Стаж_работыColumn" msprop:Generator_UserColumnName="Стаж_работы" type="xs:int" />
+              <xs:element name="Размер_оклада" msprop:Generator_ColumnVarNameInTable="columnРазмер_оклада" msprop:Generator_ColumnPropNameInRow="Размер_оклада" msprop:Generator_ColumnPropNameInTable="Размер_окладаColumn" msprop:Generator_UserColumnName="Размер_оклада" type="xs:double" />
+              <xs:element name="Н__x0020_работника" msprop:Generator_ColumnVarNameInTable="columnН__работника" msprop:Generator_ColumnPropNameInRow="Н__работника" msprop:Generator_ColumnPropNameInTable="Н__работникаColumn" msprop:Generator_UserColumnName="Н_ работника" type="xs:int" />
+              <xs:element name="К__x0020_должности" msprop:Generator_ColumnVarNameInTable="columnК__должности" msprop:Generator_ColumnPropNameInRow="К__должности" msprop:Generator_ColumnPropNameInTable="К__должностиColumn" msprop:Generator_UserColumnName="К_ должности" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="Отчёт_x0020_о_x0020_средней_x0020_успеваемости" msprop:Generator_TableClassName="Отчёт_о_средней_успеваемостиDataTable" msprop:Generator_TableVarName="tableОтчёт_о_средней_успеваемости" msprop:Generator_TablePropName="Отчёт_о_средней_успеваемости" msprop:Generator_RowDeletingName="Отчёт_о_средней_успеваемостиRowDeleting" msprop:Generator_RowChangingName="Отчёт_о_средней_успеваемостиRowChanging" msprop:Generator_RowEvHandlerName="Отчёт_о_средней_успеваемостиRowChangeEventHandler" msprop:Generator_RowDeletedName="Отчёт_о_средней_успеваемостиRowDeleted" msprop:Generator_UserTableName="Отчёт о средней успеваемости" msprop:Generator_RowChangedName="Отчёт_о_средней_успеваемостиRowChanged" msprop:Generator_RowEvArgName="Отчёт_о_средней_успеваемостиRowChangeEvent" msprop:Generator_RowClassName="Отчёт_о_средней_успеваемостиRow">
           <xs:complexType>
             <xs:sequence>
@@ -548,6 +748,17 @@ SELECT Номер, ФИО, Код_должности, Стаж_работы FROM
     <xs:unique name="Работники_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Работники" />
       <xs:field xpath="mstns:Номер" />
+    </xs:unique>
+    <xs:unique name="View_test_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_test" />
+      <xs:field xpath="mstns:К__x0020_должности" />
+      <xs:field xpath="mstns:Н__x0020_испытания" />
+      <xs:field xpath="mstns:Н__x0020_испытателя" />
+    </xs:unique>
+    <xs:unique name="View_РД_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_РД" />
+      <xs:field xpath="mstns:Н__x0020_работника" />
+      <xs:field xpath="mstns:К__x0020_должности" />
     </xs:unique>
   </xs:element>
   <xs:annotation>
