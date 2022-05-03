@@ -41,6 +41,7 @@ namespace WFforSQL
             this.отчётыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПриложенииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.экспортToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,6 +124,8 @@ namespace WFforSQL
             // 
             // отчётыToolStripMenuItem
             // 
+            this.отчётыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.экспортToolStripMenuItem});
             this.отчётыToolStripMenuItem.Name = "отчётыToolStripMenuItem";
             this.отчётыToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.отчётыToolStripMenuItem.Text = "Отчёты";
@@ -140,6 +143,13 @@ namespace WFforSQL
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выход);
+            // 
+            // экспортToolStripMenuItem
+            // 
+            this.экспортToolStripMenuItem.Name = "экспортToolStripMenuItem";
+            this.экспортToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.экспортToolStripMenuItem.Text = "Экспорт";
+            this.экспортToolStripMenuItem.Click += new System.EventHandler(this.экспортToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -172,5 +182,6 @@ namespace WFforSQL
         private System.Windows.Forms.ToolStripMenuItem испытанияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ответыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вопросыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem экспортToolStripMenuItem;
     }
 }

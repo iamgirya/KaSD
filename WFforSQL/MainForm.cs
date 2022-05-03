@@ -68,5 +68,11 @@ namespace WFforSQL
             connect = new System.Data.SqlClient.SqlConnection(connectionString);
             connect.Open();
         }
+
+        private void экспортToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            export exportMoment = new export();
+            exportMoment.Show();
+        }
     }
 }

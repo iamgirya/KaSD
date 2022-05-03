@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ЛР10\export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ЛР10\export.Designer.cs">
+      <DependentUpon>export.cs</DependentUpon>
+    </Compile>
     <Compile Include="Testing_workersDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -125,6 +131,9 @@
     <Compile Include="ЛР9\workAdd.Designer.cs">
       <DependentUpon>workAdd.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ЛР10\export.resx">
+      <DependentUpon>export.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ЛР8\aboutMe.resx">
       <DependentUpon>aboutMe.cs</DependentUpon>
     </EmbeddedResource>
